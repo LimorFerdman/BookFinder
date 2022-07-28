@@ -1,0 +1,97 @@
+body{    
+    background-color: #017199;    
+    height: 100%;    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.title{
+    margin: auto;
+    margin-top: 10px;    
+}
+
+.searchBooks{    
+    display: flex;
+    flex-direction: row;
+}
+
+.searchBooksMeta{
+    margin:auto;
+    display: flex;    
+    flex-wrap: wrap;    
+    align-items: stretch;
+}
+
+#header {
+    font-family: 'Righteous', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+}
+#searchBox{
+    width: 70%;;
+    height: 25px;
+    margin:  auto;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.errorReport{
+    visibility: hidden;
+    color: yellow;
+    margin-top: 1%;
+    text-align: center;
+
+}
+
+.containerList {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+  }
+  
+  /* Screen larger than 600px? 2 column */
+  @media (min-width: 600px) {
+    .containerList { grid-template-columns: repeat(2, 1fr); }
+  }
+  
+  /* Screen larger than 900px? 3 columns */
+  @media (min-width: 900px) {
+    .containerList { grid-template-columns: repeat(3, 1fr); }
+  }
+
+.card{
+    border-radius: 25px;
+    border: 2px solid whitesmoke;
+    padding: 20px;
+    margin: 20px;
+    background-color: white;   
+}
+
+.cardContent{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.cardData{
+    padding-left: 10px;
+}
+
+
+.cardTitle{
+    color: #017199;
+}
+
+.cardText{
+    height: 180px;
+    overflow-y: auto;
+    padding: 3px;
+    margin: 5px;
+    line-break: auto;
+}
+
+.cardImg{
+    border: 1 solid black;
+}
